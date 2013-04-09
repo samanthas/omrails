@@ -1,4 +1,5 @@
 class Pin < ActiveRecord::Base
+  # This is so that we can add a url to the image
   attr_accessible :description, :image, :image_remote_url
 
   validates :description, presence: true
